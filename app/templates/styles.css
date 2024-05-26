@@ -1,15 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 .logo {
     width: 80px;
     height: 40px;
+    margin-left: 8vw;
+    align-self: center;
 }
 
-.header {
-    
+.desktop-nav {
+    display: flex;
+    justify-content: space-around;
+    height: 12vh;
 }
+
+.title {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 4px solid dimgray;
+}
+
+h2 {
+    margin: 0;
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    margin: auto;
+    margin-right: 8vw;
+}
+
 .container {
     width: 50%;
     margin: 0 auto;
