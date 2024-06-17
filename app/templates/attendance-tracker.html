@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="desktop-nav">
+        <img src="../static/images/logo-light.png" alt="Logo" class="logo">
+        <a href="record-form.html">
+            <button id="nav-button" class="nav-button">Employee Record</button>
+        </a>
+    </div>
+
+    <div class="title">
+        <h2>ATTENDANCE TRACKER</h2>
+    </div>
+
+    <div class="container">
+        <div class="photo-section">
+            <div class="photo-box"></div>
+            <label for="verification">Verification:</label>
+            <input type="text" id="verification" name="verification" value="Employee found!" disabled>
+        </div>
+        <form id="attendanceForm" action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Smitherton" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="employeeNumber">Employee Number</label>
+                    <input type="text" id="employeeNumber" name="employeeNumber" placeholder="E.g. 12-345-6789" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department" placeholder="Information Technology" required>
+                </div>
+            </div>
+
+            <div class="attendance-confirm-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="text" id="time" name="time" placeholder="08:00:00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateToday">Date Today:</label>
+                        <input type="text" id="dateToday" name="dateToday" placeholder="06/20/2000" required>
+                    </div>
+                </div>
+                <button type="submit">Confirm</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

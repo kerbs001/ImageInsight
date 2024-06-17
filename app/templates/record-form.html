@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Record Form</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="desktop-nav">
+        <img src="../static/images/logo-light.png" alt="Logo" class="logo">
+        <a href="attendance-tracker.html">
+            <button id="nav-button" class="nav-button">Attendance Tracker</button>
+        </a>
+    </div>
+
+    <div class="title">
+        <h2>EMPLOYEE RECORD FORM</h2>
+    </div>
+
+    <div class="container">
+        <form id="registrationForm" action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Smitherton" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="employeeNumber">Employee Number</label>
+                    <input type="text" id="employeeNumber" name="employeeNumber" placeholder="E.g. 12-345-6789" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input type="text" id="department" name="department" placeholder="Information Technology" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="employmentStatus">Employment Status</label>
+                    <select id="employmentStatus" name="employmentStatus" required>
+                        <option value="full-time">Full-time</option>
+                        <option value="part-time">Part-time</option>
+                        <option value="contract">Contract</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="0987 654 3210" required>
+                </div>
+            </div>
+            <div class="form-group-email">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="photo-section">
+            <div class="photo-box"></div>
+            <input type="file" id="fileInput" style="display: none;">
+            <div class="photo-button-row">
+                <button id="upload-button" class="photo-box-button">Upload Picture</button>
+                <button id="picture-button" class="photo-box-button">Take a Picture</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
