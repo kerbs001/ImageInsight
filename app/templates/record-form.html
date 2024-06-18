@@ -24,20 +24,24 @@
                 <div class="form-group">
                     <label for="firstName">First name</label>
                     <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+                    <span id="firstNameError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="lastName">Last name</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Smitherton" required>
+                    <span id="lastNameError" class="error-message"></span>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label for="employeeNumber">Employee Number</label>
                     <input type="text" id="employeeNumber" name="employeeNumber" placeholder="E.g. 12-345-6789" required>
+                    <span id="employeeNumberError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="department">Department</label>
                     <input type="text" id="department" name="department" placeholder="Information Technology" required>
+                    <span id="departmentError" class="error-message"></span>
                 </div>
             </div>
             <div class="form-row">
@@ -48,29 +52,35 @@
                         <option value="part-time">Part-time</option>
                         <option value="contract">Contract</option>
                     </select>
+                    <span id="employmentStatusError" class="error-message"></span>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number</label>
                     <input type="text" id="phoneNumber" name="phoneNumber" placeholder="0987 654 3210" required>
+                    <span id="phoneNumberError" class="error-message"></span>
                 </div>
             </div>
             <div class="form-group-email">
                 <label for="email">Email address</label>
                 <input type="email" id="email" name="email" placeholder="email@domain.com" required>
+                <span id="emailError" class="error-message"></span>
             </div>
             <button type="submit">Submit</button>
         </form>
+        <input type="file" id="fileInput" style="display: none;">
         <div class="photo-section">
-            <div class="photo-box"></div>
-            <input type="file" id="fileInput" style="display: none;">
-            <div class="photo-button-row">
-                <button id="upload-button" class="photo-box-button">Upload Picture</button>
-                <button id="picture-button" class="photo-box-button">Take a Picture</button>
+            <div class="photo-box">
+                <video id="video" width="320" height="240" autoplay></video>
+                <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
             </div>
-            
+            <div class="photo-button-row">
+                <button id="picture-button" class="photo-box-button">Take a Picture</button>
+                <button id="retake-button" class="photo-box-button" style="display: none;">Retake Picture</button>
+            </div>
+            </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
