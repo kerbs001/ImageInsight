@@ -19,7 +19,11 @@
     </div>
 
     <div class="container">
-        <form id="registrationForm" action="#" method="post">
+        <!-- Confirmation or Error Message -->
+        <div id="confirmation-message" style="display: none; text-align: center; margin-bottom: 10px;">
+            <p style="color: green;">Form submitted successfully!</p>
+        </div>
+        <form id="registrationForm" action="/submit_form" method="post">
             <div class="form-row">
                 <div class="form-group">
                     <label for="firstName">First name</label>
@@ -67,6 +71,12 @@
             </div>
             <button type="submit">Submit</button>
         </form>
+        <!-- Confirmation message -->
+        <div id="form-confirmation-message" style="display: none; text-align: center; margin-top: 10px;">
+            <p>Employee details submitted successfully!</p>
+        </div>
+        <!-- Hidden input for face image -->
+        <input type="hidden" id="faceImage" name="faceImage">
         <input type="file" id="fileInput" style="display: none;">
         <div class="photo-section">
             <div class="photo-box">
@@ -77,10 +87,8 @@
                 <button id="picture-button" class="photo-box-button">Take a Picture</button>
                 <button id="retake-button" class="photo-box-button" style="display: none;">Retake Picture</button>
             </div>
-            </div>
         </div>
     </div>
-
-    <script src="../script.js"></script>
+    <script src="../static/script.js"></script>
 </body>
 </html>
